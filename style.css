@@ -32,7 +32,7 @@ p {
 /* Navigation bar text display */
 p a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -40,7 +40,7 @@ p a {
 
 /* Navigation bar text display effects */
 p a:hover:not(.active) {
-  background-color: #111;
+  background-color: #ffffff;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 }

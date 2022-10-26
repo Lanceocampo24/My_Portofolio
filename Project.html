@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/portfolio-logo1.webp" class="rounded-circle">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -18,8 +18,8 @@
         <a>
           <img src="assets/portfolio-logo1.webp" class="rounded-circle" alt="Logo">
         </a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-arrow-circle-right" style="font-size:24px" onclick="hideMenu"></i>
+        <div class="nav-links" id="togglemenu">
+          <i class="fa fa-arrow-circle-right" style="font-size:24px" onclick="hideMenu()"></i>
           <ul>
             <li><a href="Portfolio.html">Home</a></li>
             <li><a href="">Projects</a></li>
@@ -27,21 +27,55 @@
             <li><a href="Contact.html">Contact Me</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" style="font-size:24px" onclick="showMenu"></i>
+        <i class="fa fa-bars" style="font-size:24px" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
         <h1> My Projects </h1>
       </div>
     </div>
 
-    <!-- JavaScript for toggle Menu (Not working hayst)-->
+    <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-6">
+               <h3> Car Rental System </h3>
+               <p> Is a self sustaining system which is the best opportunity for the people who cannot afford to buy the car in their family. Due to this system the people can borrow the car on rent for some time and do they compulsory work while paying the charges the rented car. <br> <br>
+                   People need to peregrinate at different places due to their official work, family issues and other major things. If the travelling is of a more preponderant distance then a person needs a car to peregrinate because it is comfortable apart from the other public conveys consequently people prefer car rather than public convey.<br> <br>
+                   The public convey is not very flexible and halcyon like the trains, buses etc. ergo people cull self car in lieu of other options. After the technology advancement, every family needs a personal conveyance for themselves because of the desideratum to peregrinate at different places which is far from their residence.<br>
+               </p>
+            </div>
+            <div class="col-sm-6">
+              <div class="img-container">
+                <img src="assets/dashboard.png" alt="">
+              </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-sm-6">
+              <h4> School Sample Promotion </h4>
+              <p> is a self sustaining system which is the best opportunity for the people who cannot afford to buy the car in their family. Due to this system the people can borrow the car on rent for some time and do they compulsory work while paying the charges the rented car. <br> <br>
+                  People need to peregrinate at different places due to their official work, family issues and other major things. If the travelling is of a more preponderant distance then a person needs a car to peregrinate because it is comfortable apart from the other public conveys consequently people prefer car rather than public convey.<br> <br>
+                  The public convey is not very flexible and halcyon like the trains, buses etc. ergo people cull self car in lieu of other options. After the technology advancement, every family needs a personal conveyance for themselves because of the desideratum to peregrinate at different places which is far from their residence.<br>
+              </p>
+           </div>
+           <div class="col-sm-6">
+             <div class="img-container">
+               <img src="assets/dashboard.png" alt="">
+             </div>
+           </div>
+        </div>
+     </div>
+
+    <!-- JavaScript for toggle Menu -->
     <script>
-      var navLinks = document.getElementById("navLinks");
+      var togglemenu = document.getElementById("togglemenu");
       function showMenu(){
-        navLinks.style.right = "0";
+        togglemenu.style.right = "0px";
       }
       function hideMenu(){
-        navLinks.style.right = "-200px";
+        togglemenu.style.right = "-200px";
       }
     </script>
   </body>
